@@ -1,0 +1,48 @@
+section > div{
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div > div{
+    flex: 1;
+    background-color: brown;
+    height: 50px;
+}
+
+/*First section*/
+.equal-size-2 {
+    gap: 10px;
+    padding: 10px;
+}
+/*End of first section*/
+
+/*Second Section*/
+.equal-size-3{
+    gap: 15px;
+    padding: 15px;
+}
+/*End of second section*/
+
+/*Next two styles are used for section 3 and section 4*/
+.unequal-size-3, .with-footer-4{
+    gap: 12px;
+    padding: 12px;
+}
+
+.unequal-size-3 > div, .with-footer-4 > div{
+    border: 2px solid goldenrod;
+}
+
+/*Third Section*/
+.double-size{
+    flex-grow: 2;
+}
+/*End of third section*/
+
+/*Fourth section*/
+.footer-sec-4{
+    align-self: flex-end;
+    flex-basis: 100%;
+}
+/*End of fourth section*/
